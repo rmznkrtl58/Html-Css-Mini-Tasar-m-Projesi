@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: white;
+}
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#logo-box .logo {
+  color: white;
+  width: 700;
+  font-size: 3.2rem;
+}
+#logo-box {
+  float: left;
+  padding-top: 0.5rem;
+}
+#nav-links {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#nav-links .nav-item {
+  float: left;
+  padding: 0.5rem;
+}
+#nav-links .nav-link {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: block;
+  padding: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+#nav-links .nav-link:hover {
+  color: yellow;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+/*Nav bar*/
+nav {
+  width: 100%;
+  position: fixed;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: red;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem; /*30 px 3 katı*/
+  z-index: 500;
+}
+header {
+  background-color: orange;
+  height: 700px;
+  padding-top: calc(126px + 7rem);
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.img-fluid {
+  max-width: 256px;
+  height: auto;
+}
+header h1 {
+  color: rgb(0, 111, 237);
+  font-size: 6rem;
+}
+header h2 {
+  color: rgb(26, 36, 235);
+  font-size: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+
+.star-light,
+.star-dark {
+  border: none;
+  border-top: 0.4rem solid white;
+  border-radius: 10px;
+  max-width: 25rem;
+  margin: 2.5rem auto;
+  overflow: visible;
+  height: 0;
+}
+.star-light::after {
+  content: "\2605";
+  color: white;
+  font-weight: 900;
+  font-size: 3.2rem;
+  position: relative;
+  top: -28px;
+  padding: 0 8px;
+  background-color: orange;
+}
+.star-dark::after {
+  content: "\2605";
+  color: white;
+  font-weight: 900;
+  font-size: 3.2rem;
+  position: relative;
+  top: -28px;
+  padding: 0 8px;
+  background-color: rgb(71, 232, 117);
+}
+section {
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+  text-align: center;
+  background-color: rgb(71, 232, 117);
+}
+/*Portfolio*/
+
+#portfolio {
+}
+#portfolio h2 {
+  font-size: 4.8rem;
+  color: rgb(223, 23, 129);
+}
+.col {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.portfolio-item {
+  position: relative;
+}
+.portfolio-item img {
+  display: block;
+  border-radius: 13px;
+}
+.img-fluid-p {
+  max-width: 100%;
+  height: auto;
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(196, 220, 227);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.img-overlay .icon {
+  color: black;
+  font-size: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.portfolio-item:hover .img-overlay {
+  opacity: 0.8;
+  border-radius: 13px;
+}
+.btn {
+  margin-top: 2rem;
+
+  font-weight: 400;
+  display: inline-block;
+  background-color: transparent;
+
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn:hover {
+  color: rgb(61, 98, 233);
+  background-color: white;
+}
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  padding: 2.2rem 1.6rem;
+}
+.btn-send {
+  border: 2px solid white;
+  color: black;
+}
+.btn2 {
+  margin-top: -2rem;
+  font-size: 2rem;
+  padding: 2.2rem 1.6rem;
+  font-weight: 400;
+  display: inline-block;
+  background-color: transparent;
+
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn2:hover {
+  color: rgb(61, 98, 233);
+  background-color: white;
+}
+.btn-large {
+  font-size: 2rem;
+  padding: 2.2rem 1.6rem;
+}
+
+.btn-social {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+/*about*/
+#about {
+  background-color: orange;
+  color: black;
+}
+#about h2 {
+  font-size: 4rem;
+}
+
+#about-text .left {
+  float: left;
+  width: 50%;
+  padding-right: 2rem;
+  padding-left: 23rem;
+}
+#about-text .right {
+  float: right;
+  width: 50%;
+  padding-right: 23rem;
+  padding-left: 2rem;
+}
+
+.text {
+  text-align: left;
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 550;
+}
+#about-text {
+}
+/*Contact*/
+#contact h2 {
+  font-size: 4rem;
+  color: rgb(242, 83, 115);
+}
+#contact-form {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}
+.form-group {
+  border-bottom: 1px solid black;
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+.form-group input,
+.form-group textarea {
+  border: none;
+  width: 100%;
+  display: block;
+  font-size: 2.4rem;
+
+  background-color: transparent;
+}
+.form-group input:focus,
+.form-group textarea {
+  outline: 0;
+}
+/*Contact*/
+footer {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: rgb(62, 88, 111);
+  color: rgb(36, 243, 243);
+  text-align: center;
+}
+footer h4 {
+  font-size: 2.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+footer p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+footer li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.copyright {
+  background-color: white;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  color: black;
+  text-align: center;
+}

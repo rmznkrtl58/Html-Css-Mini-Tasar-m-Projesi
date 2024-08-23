@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front End Web Projesi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container clearfix">
+        <div id="logo-box">
+          <a href="/" class="logo text-uppercase">Front End Web Tasarımı</a>
+        </div>
+        <div id="nav-links">
+          <ul>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-uppercase">Yazılım</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-uppercase">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-uppercase">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <img src="images/man.png" id="profile-image" class="img-fluid" alt="" />
+        <h1 class="text-uppercase">Ramazan Kartal</h1>
+        <hr class="star-light" />
+        <h2>
+          Backand Developer - C# (.Net Developer) - Sql Database Programming
+        </h2>
+      </div>
+    </header>
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="text-uppercase">Software</h2>
+        <hr class="star-dark" />
+        <div id="portfolio-images" class="clearfix">
+          <div class="col">
+            <div class="portfolio-item">
+              <a href="#">
+                <img class="img-fluid-p" src="images/oop.png" alt="" />
+                <div class="img-overlay">
+                  <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="portfolio-item">
+              <a href="#">
+                <img class="img-fluid-p" src="images/dotNET.png" alt="" />
+                <div class="img-overlay">
+                  <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="portfolio-item">
+              <a href="#">
+                <img
+                  class="img-fluid-p"
+                  src="images/SQL-Microsoft.jpg"
+                  alt=""
+                />
+                <div class="img-overlay">
+                  <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="portfolio-item">
+              <a href="#">
+                <img
+                  class="img-fluid-p"
+                  src="images/what-is-software-CA-Capterra-Header.png"
+                  alt=""
+                />
+                <div class="img-overlay">
+                  <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h2 class="text-uppercase">Hakkımızda</h2>
+      <hr class="star-light" />
+      <div id="about-text" class="clearfix">
+        <div class="left">
+          <p class="text">
+            backand developer olmak için ilk önce front end konularından html ve
+            css konularını temel bir şekilde kavraman gerekecek. ve c#
+            programlama dilini iyi bir şekilde öğrenmen gerekecek.
+          </p>
+        </div>
+        <div class="right">
+          <p class="text">
+            c# dilini iyi bir şekilde kavradıktan sonra .net teknolojilerine
+            girişini yavaştan yapabilirsin. ilk önce asp.neti kavrayıp sonra Mvc
+            ve Core teknolojilerinide öğrenmen gerekecek.tabi bunların yanında
+            sql server gibi databaseleride kullanıp pratik yapman
+            gerekecek.projelerle pratik yaparak kendini geliştiriceksin.
+            <br />
+            <strong style="color: white">
+              "c#'ı İndirmek İçin aşağıdaki Download Butonuna
+              Tıklayabilirsin"</strong
+            >
+          </p>
+        </div>
+      </div>
+      <button class="btn btn-outline btn-large">
+        <i class="fa-solid fa-download"></i>
+        Download
+      </button>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2 class="text-uppercase">İLETİŞİM</h2>
+        <hr class="star-dark" />
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="name" />
+          </div>
+          <div class="form-group">
+            <input type="text" id="e-mail" placeholder="e-mail" />
+          </div>
+          <div class="form-group">
+            <input type="text" id="phone" placeholder="phone" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="message"></textarea>
+          </div>
+          <button class="btn2 btn-send">
+            <i class="fa-solid fa-download"></i>
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container clearfix">
+        <div class="col">
+          <h4 class="text-uppercase">İLETİŞİM:</h4>
+          <p>Tel:05300214563 Eposta:ramo@gmail.com</p>
+        </div>
+        <div class="col">
+          <h4 class="text-uppercase">Hesaplarımız:</h4>
+          <ul>
+            <li>
+              <button class="btn btn-outline btn-social">
+                <i class="fa-brands fa-facebook-f"></i>
+              </button>
+            </li>
+            <li>
+              <button class="btn btn-outline btn-social">
+                <i class="fa-brands fa-twitter"></i>
+              </button>
+            </li>
+            <li>
+              <button class="btn btn-outline btn-social">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </button>
+            </li>
+            <li>
+              <button class="btn btn-outline btn-social">
+                <i class="fa-brands fa-instagram"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div class="cpr">
+        <small>copyright © Your Website 2024 (tr)</small>
+      </div>
+    </div>
+  </body>
+</html>
